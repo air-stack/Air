@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://github.com/kevinten10/Air/blob/master/Air.png" style="height: 100px;width: 100px">
+  <img src="https://github.com/kevinten10/Air/blob/master/Air.png" style="height:200px"/>
 </p>
 
 # Air - A Typical Iot Application Solutions
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
+  <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
 </p>
 
 ## Introduction
@@ -29,7 +29,7 @@ JavaWeb服务器：[Air-Webapp](https://github.com/kevinten10/Air-Webapp)
 ## Architecture
 
 <p align="center">
-  <img src="https://github.com/kevinten10/Air/blob/master/%E6%9E%B6%E6%9E%84%E5%9B%BE.png">
+  <img src="https://github.com/kevinten10/Air/blob/master/%E6%9E%B6%E6%9E%84%E5%9B%BE.png" />
 </p>
 
 ## License

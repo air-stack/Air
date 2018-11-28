@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/kevinten10/Air/blob/master/Air.png">
+  <img src="https://github.com/kevinten10/Air/blob/master/Air.png" style="height: 100px;width: 100px">
 </p>
 
 # Air - A Typical Iot Application Solutions

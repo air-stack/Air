@@ -20,17 +20,26 @@ Air - 大气质量检测系统。由物联网传感设备，以及相应服务�
 
 Stm32嵌入式物联网设备：[Air-Iot](https://github.com/kevinten10/Air-Iot)
 
-Swing虚拟物联网场景：[Air-Room](https://github.com/kevinten10/Air-Room)
+模拟物联网设备：[Air-Room](https://github.com/kevinten10/Air-Room)
 
-AioServer Tcp服务器：[Air-Server](https://github.com/kevinten10/Air-Server)
+Tcp服务器：[Air-Server](https://github.com/kevinten10/Air-Server)
 
-JavaWeb服务器：[Air-Webapp](https://github.com/kevinten10/Air-Webapp)
+数据服务器：[Air-Back](https://github.com/kevinten10/Air-Back)
+
+WEB服务器：[Air-Webapp](https://github.com/kevinten10/Air-Webapp)
 
 ## Architecture
 
 <p align="center">
   <img src="https://github.com/kevinten10/Air/blob/master/%E6%9E%B6%E6%9E%84%E5%9B%BE.png" />
 </p>
+
+## Startup
+
+1. Air-Back
+2. Air-Server
+3. Air-Room / Air-Iot
+4. Air-Webapp
 
 ## License
 

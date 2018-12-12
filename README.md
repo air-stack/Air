@@ -31,7 +31,7 @@ WEB展示服务：[Air-Webapp](https://github.com/kevinten10/Air-Webapp)
 ## Architecture
 
 <p align="center">
-  <img src="https://github.com/kevinten10/Air/blob/master/Jiagou.png" />
+  <img src="https://github.com/kevinten10/Air/blob/master/Architecture.png" />
 </p>
 
 ## Startup

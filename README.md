@@ -8,11 +8,11 @@
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
 </p>
 
-## Introduction 介绍
+## Introduction. 主要介绍
 
 Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设备 -> (WIFI模块) -> TcpSocket服务器 -> Web后端服务器 -> 数据库 -> Web前端展示。以及包含Android移动端相关应用。完成了一整个物联网应用场景的流程。
 
-## Projects 子项目如下
+## Projects. 子项目一览
 
 [Air-Iot](https://github.com/kevinten10/Air-Iot) :基于指南者Stm32开发板进行开发，通过传感器感知大气质量指标，通过WIFI模块进行TCP通信，完成物联网嵌入式设备的构建。
 
@@ -28,17 +28,50 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 
 [Air-Phone](https://github.com/kevinten10/Air-Phone) :基于Kotlin，移动端接收嵌入式设备发送的数据包，并通过HTTP发送到WEB服务器。
 
-## Technology Stack
+## Technology Stack. 技术栈
 
-**Stm32 + Java Swing + Aio Server + Servlet + Jdbc + Springboot + Mybatis + Mysql + Kotlin**
+|服务|技术栈|其他|
+|---|---|---|
+|Air-Iot|Stm32开发板，DHT11温湿度模块，ESP8266WIFI模块|Keil Mdk5 进行程序烧写|
+|Air-Protocol|Java十六进制编解码||
+|Air-Room|Swing可视化编程，Socket客户端|依赖protocol服务进行模拟协议数据的生成|
+|Air-Server|Smart-Socket框架，Http调用|依赖protocol服务进行协议编解码|
+|Air-Back|Springboot，Mybatis||
+|Air-Webapp|Jsp，Servlet，Jdbc||
+|Air-Phone|Kotlin ...|
 
-## Architecture
+## Architecture. 运行流程
 
 <p align="center">
   <img src="https://github.com/kevinten10/Air/blob/master/Architecture.png" />
 </p>
 
-## Startup
+## Deploy. 快速部署
+
+#### 1.1 部署嵌入式设备 :
+
+1. 购买野火指南者STM32开发板，配置好KeilMdk5开发IDE环境(为方便开发，可用Clion或其他C语言IDE进行程序开发，仅适用Keil进行程序烧写)。
+2. 将 **[Air-Iot](https://github.com/kevinten10/Air-Iot)** 程序烧写到开发板中，具体配置请打开查看
+3. 首先运行TCP网络调试工具，监听指定端口，查看是否收到数据包。
+
+#### 1.2 部署虚拟嵌入式设备 :
+
+1. 启动 **[Air-Room](https://github.com/kevinten10/Air-Room)** 数据模拟服务，运行后将通过SOCKET发送模拟的数据包到TCP-SERVER服务处，修改相关配置，确保发送端口和TCP-SERVER监听端口一致(默认)。
+
+#### 2 以上服务选择一种部署完成后：
+
+1. 启动 **[Air-Server](https://github.com/kevinten10/Air-Server)** TCP-SERVER服务，进行端口的监听，接收TCP数据包，并通过HTTP将数据发送到BACK服务。
+2. 启动 **[Air-Back](https://github.com/kevinten10/Air-Back)** BACK服务，接收HTTP请求，将数据写入到MySQL数据库中，需按照说明配置好MySQL数据库。
+
+#### 3 进行数据展示:
+
+1. 启动 **[Air-Webapp](https://github.com/kevinten10/Air-Webapp)** 配置好JDBC相关配置，可展示BACK服务存储的数据。
+
+#### 移动端:
+
+* TODO
+
+### 简言之: 
 
 1. 建立数据库: sql文件详见 **/sql/sql文件**
 
@@ -46,12 +79,9 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 
 3. 启动TCP通信服务，[Air-Server](https://github.com/kevinten10/Air-Server)，或者通过 **/网络调试工具/NetAssist.exe** ，直接查看TCP接收内容
 
-4. 启动数据发送服务，运行模拟器 [Air-Room](https://github.com/kevinten10/Air-Room) 
-   ，或者将 [Air-Iot](https://github.com/kevinten10/Air-Iot) 烧写到开发板中。
+4. 启动数据发送服务，运行模拟器 [Air-Room](https://github.com/kevinten10/Air-Room) ，或者将 [Air-Iot](https://github.com/kevinten10/Air-Iot) 烧写到开发板中。
    
 5. 登录数据展示网站，观看数据交互结果 [Air-Webapp](https://github.com/kevinten10/Air-Webapp)
-
-## 
 
 ## License
 

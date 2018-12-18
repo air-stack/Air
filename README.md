@@ -46,6 +46,10 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 |Air-Webapp|Jsp，Servlet，Jdbc||
 |Air-Phone|Kotlin ...|
 
+#### 提示: 
+
+依赖protocol的意思是 :需要把protocol项目打包成jar(Maven或IDEA)，然后作为本机jar包添加到依赖工程中去。
+
 ## Architecture. 运行流程
 
 <p align="center">
@@ -77,7 +81,7 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 
 * TODO
 
-### 简言之: 
+### 或者可以: 
 
 1. 建立数据库: sql文件详见 **/sql/sql文件**
 
@@ -88,6 +92,16 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 4. 启动数据发送服务，运行模拟器 [Air-Room](https://github.com/kevinten10/Air-Room) ，或者将 [Air-Iot](https://github.com/kevinten10/Air-Iot) 烧写到开发板中。
    
 5. 登录数据展示网站，观看数据交互结果 [Air-Webapp](https://github.com/kevinten10/Air-Webapp)
+
+## 或者您想随便试试？
+
+1. 单独启动 **[Air-Room](https://github.com/kevinten10/Air-Room)** ，会不断产生模拟数据，并打印到控制台，若服务端未启动，会打印"TCP FAILURE"，说明发送失败。
+
+2. 单独启动 **[Air-Server](https://github.com/kevinten10/Air-Server)** ，可供学习TCP_SERVER操作，基于smart-socket框架，可通过网络调试工具手动发送tcp数据包，观察运行流程。
+
+3. 单独启动 **[Air-Back](https://github.com/kevinten10/Air-Back)** ，需配置好数据库，单独启动没卵用，简单的REST接口服务。
+
+4. 单独启动 **[Air-Webapp](https://github.com/kevinten10/Air-Webapp)** ，配置好数据库，能查看数据，简单的网站功能。
 
 ## License
 

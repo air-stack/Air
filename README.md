@@ -12,21 +12,27 @@
 
 Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设备 -> (WIFI模块) -> TcpSocket服务器 -> Web后端服务器 -> 数据库 -> Web前端展示。以及包含Android移动端相关应用。完成了一整个物联网应用场景的流程。
 
+## Language. 开发语言
+
+* Java :5/7
+* C :1/7
+* Kotlin :1/7 
+
 ## Projects. 子项目一览
 
-[Air-Iot](https://github.com/kevinten10/Air-Iot) :基于指南者Stm32开发板进行开发，通过传感器感知大气质量指标，通过WIFI模块进行TCP通信，完成物联网嵌入式设备的构建。
+**[Air-Iot](https://github.com/kevinten10/Air-Iot)** :基于指南者Stm32开发板进行开发，通过传感器感知大气质量指标，通过WIFI模块进行TCP通信，完成物联网嵌入式设备的构建。
 
-[Air-Protocol](https://github.com/kevinten10/Air-Protocol) :定义十六进制协议和数据实体对象，提供十六进制字符串和实体对象之间的转换工具，其他服务基于第三方Protocol服务进行协议编解码。
+**[Air-Protocol](https://github.com/kevinten10/Air-Protocol)** :定义十六进制协议和数据实体对象，提供十六进制字符串和实体对象之间的转换工具，其他服务基于第三方Protocol服务进行协议编解码。
 
-[Air-Room](https://github.com/kevinten10/Air-Room) :模拟物联网设备通过Socket发送TCP数据包，建立调度线程池，添加虚拟传感器对象，模拟大气环境检测系统，通过Socket推送Tcp模拟数据包到服务器。
+**[Air-Room](https://github.com/kevinten10/Air-Room)** :模拟物联网设备通过Socket发送TCP数据包，建立调度线程池，添加虚拟传感器对象，模拟大气环境检测系统，通过Socket推送Tcp模拟数据包到服务器。
 
-[Air-Server](https://github.com/kevinten10/Air-Server) :TCP_SERVER服务端，监听物联网设备发送的TCP数据包，将TCP数据包编解码后通过HTTP发送到BACK端进行数据存储更新。
+**[Air-Server](https://github.com/kevinten10/Air-Server)** :TCP_SERVER服务端，监听物联网设备发送的TCP数据包，将TCP数据包编解码后通过HTTP发送到BACK端进行数据存储更新。
 
-[Air-Back](https://github.com/kevinten10/Air-Back) :数据交互服务后端，基于SpringBoot快速开发后台数据服务，提供REST接口调用，基于Mybatis实现数据的CRUD操作。
+**[Air-Back](https://github.com/kevinten10/Air-Back)** :数据交互服务后端，基于SpringBoot快速开发后台数据服务，提供REST接口调用，基于Mybatis实现数据的CRUD操作。
 
-[Air-Webapp](https://github.com/kevinten10/Air-Webapp) :WEB数据展示网站，基于Servlet+Jdbc搭建，进行监测数据的展示。
+**[Air-Webapp](https://github.com/kevinten10/Air-Webapp)** :WEB数据展示网站，基于Servlet+Jdbc搭建，进行监测数据的展示。
 
-[Air-Phone](https://github.com/kevinten10/Air-Phone) :基于Kotlin，移动端接收嵌入式设备发送的数据包，并通过HTTP发送到WEB服务器。
+**[Air-Phone](https://github.com/kevinten10/Air-Phone)** :基于Kotlin，移动端接收嵌入式设备发送的数据包，并通过HTTP发送到WEB服务器。
 
 ## Technology Stack. 技术栈
 
@@ -35,8 +41,8 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 |Air-Iot|Stm32开发板，DHT11温湿度模块，ESP8266WIFI模块|Keil Mdk5 进行程序烧写|
 |Air-Protocol|Java十六进制编解码||
 |Air-Room|Swing可视化编程，Socket客户端|依赖protocol服务进行模拟协议数据的生成|
-|Air-Server|Smart-Socket框架，Http调用|依赖protocol服务进行协议编解码|
-|Air-Back|Springboot，Mybatis||
+|Air-Server|Smart-Socket服务端，Http客户端|依赖protocol服务进行协议编解码|
+|Air-Back|Springboot，Mybatis，Http服务端|需配置MySQL数据库|
 |Air-Webapp|Jsp，Servlet，Jdbc||
 |Air-Phone|Kotlin ...|
 

@@ -2,7 +2,7 @@
   <img src="https://github.com/kevinten10/Air/blob/master/Icon.png"/>
 </p>
 
-# Air - A Typical Iot Application Solutions. 一整套物联网系统的完整解决方案. 
+# Air - A Typical Iot Application Solutions. 大气质量检测系统. 物联网温湿度以及灰尘PM2.5采集监控. 
 
 <p align="center">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>

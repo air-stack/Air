@@ -1,5 +1,5 @@
 <p align="center" style="height: 200px">
-  <img src="https://github.com/kevinten10/Air/blob/master/Icon.png"/>
+  <img src="https://github.com/kevinten10/Air/blob/master/air-doc/images/Icon.png"/>
 </p>
 
 # Air - A Typical Iot Application Solutions. 大气质量检测系统. 物联网温湿度以及灰尘PM2.5采集监控. 
@@ -19,6 +19,14 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 * Kotlin :1/7 
 
 ## Projects. 子项目一览
+
+#### 初始化子项目:
+
+> 子项目挂载在其他git仓库中，父项目仅保留子项目引用，可使用以下命令将子项目clone到当前父项目中。
+
+    git submodule init
+
+    git submodule update
 
 **[Air-Iot](https://github.com/kevinten10/Air-Iot)** :基于指南者Stm32开发板进行开发，通过传感器感知大气质量指标，通过WIFI模块进行TCP通信，完成物联网嵌入式设备的构建。
 

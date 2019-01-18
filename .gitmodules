@@ -1,3 +1,21 @@
 [submodule "air-webapp"]
 	path = air-webapp
 	url = https://github.com/kevinten10/Air-Webapp.git
+[submodule "air-phone"]
+	path = air-phone
+	url = https://github.com/kevinten10/Air-Phone.git
+[submodule "air-back"]
+	path = air-back
+	url = https://github.com/kevinten10/Air-Back.git
+[submodule "air-server"]
+	path = air-server
+	url = https://github.com/kevinten10/Air-Server.git
+[submodule "air-room"]
+	path = air-room
+	url = https://github.com/kevinten10/Air-Room.git
+[submodule "air-protocol"]
+	path = air-protocol
+	url = https://github.com/kevinten10/Air-Protocol.git
+[submodule "air-iot"]
+	path = air-iot
+	url = https://github.com/kevinten10/Air-Iot.git

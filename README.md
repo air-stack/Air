@@ -61,7 +61,7 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 ## Architecture. 运行流程
 
 <p align="center">
-  <img src="https://github.com/kevinten10/Air/blob/master/Architecture.png" />
+  <img src="https://github.com/kevinten10/Air/blob/master/air-doc/images/Architecture.png" />
 </p>
 
 ## Deploy. 快速部署
@@ -115,7 +115,7 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 
 #### 引脚连接
 
-![登录](air-doc/images/引脚连接.jpg)
+![登录](air-doc/images/引脚连接.gif)
 
 #### 登录界面
 
@@ -125,7 +125,7 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 
 ![数据](air-doc/images/数据展示.png)
 
-### 云服务器演示网址：[http://47.100.236.64:8080/air/](http://47.100.236.64:8080/air/)
+### 云服务器演示网址：[http://www.lifecat.club/air/](http://www.lifecat.club/air/)
 
 ## License
 

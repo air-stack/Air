@@ -6,7 +6,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/build-passing-green.svg" alt="license"/>
-  <img src="https://img.shields.io/badge/langua-java-red.svg" alt="license"/>
+  <img src="https://img.shields.io/badge/language-java-red.svg" alt="license"/>
   <img src="https://img.shields.io/badge/release-v1.0.0-blue.svg" alt="license"/>
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
 </p>

@@ -11,6 +11,8 @@
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
 </p>
 
+## [help wanted 寻求开源合作, 提交项目模块功能](https://github.com/kevinten10/Air/issues/1)
+
 ## Introduction. 主要介绍
 
 Air - 大气质量监测系统。主要数据流程为 :物联网Stm32传感设备 -> (WIFI模块) -> TcpSocket服务器 -> Web后端服务器 -> 数据库 -> Web前端展示。以及包含Android移动端相关应用。完成了一整个物联网应用场景的流程。

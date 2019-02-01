@@ -2,21 +2,24 @@
   <img src="https://github.com/kevinten10/Air/blob/master/air-doc/images/Icon.png"/>
 </p>
 
-# Air - A Typical Iot Application Solutions. 大气质量检测系统. 物联网温湿度以及灰尘PM2.5采集监控. 
+# Air - A Typical Iot Application Solutions. 大气质量监测系统. 物联网温湿度以及灰尘PM2.5采集监控. 
 
 <p align="center">
+  <img src="https://img.shields.io/badge/build-passing-green.svg" alt="license"/>
+  <img src="https://img.shields.io/badge/langua-java-red.svg" alt="license"/>
+  <img src="https://img.shields.io/badge/release-v1.0.0-blue.svg" alt="license"/>
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
 </p>
 
 ## Introduction. 主要介绍
 
-Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设备 -> (WIFI模块) -> TcpSocket服务器 -> Web后端服务器 -> 数据库 -> Web前端展示。以及包含Android移动端相关应用。完成了一整个物联网应用场景的流程。
+Air - 大气质量监测系统。主要数据流程为 :物联网Stm32传感设备 -> (WIFI模块) -> TcpSocket服务器 -> Web后端服务器 -> 数据库 -> Web前端展示。以及包含Android移动端相关应用。完成了一整个物联网应用场景的流程。
 
 ## Language. 开发语言
 
-* Java :5/7
-* C :1/7
-* Kotlin :1/7 
+* Java :5个子项目
+* C :1个嵌入式子项目
+* Kotlin :1个移动端子项目 
 
 ## Projects. 子项目一览
 
@@ -38,7 +41,7 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 
 **[Air-Back](https://github.com/kevinten10/Air-Back)** :数据交互服务后端，基于SpringBoot快速开发后台数据服务，提供REST接口调用，基于Mybatis实现数据的CRUD操作。
 
-**[Air-Webapp](https://github.com/kevinten10/Air-Webapp)** :WEB数据展示网站，基于Servlet+Jdbc搭建，进行监测数据的展示。
+**[Air-Webapp](https://github.com/kevinten10/Air-Webapp)** :WEB数据展示网站，基于Servlet+Jdbc+jQuery+Bootstrap搭建，进行监测数据的展示。
 
 **[Air-Phone](https://github.com/kevinten10/Air-Phone)** :基于Kotlin，移动端接收嵌入式设备发送的数据包，并通过HTTP发送到WEB服务器。
 
@@ -49,10 +52,10 @@ Air - 大气质量检测系统。主要数据流程为 :物联网Stm32传感设�
 |Air-Iot|Stm32开发板，DHT11温湿度模块，ESP8266WIFI模块|Keil Mdk5 进行程序烧写|
 |Air-Protocol|Java十六进制编解码||
 |Air-Room|Swing可视化编程，Socket客户端|依赖protocol服务进行模拟协议数据的生成|
-|Air-Server|Smart-Socket服务端，Http客户端|依赖protocol服务进行协议编解码|
+|Air-Server|Smart-Socket TCP服务端，Http客户端|依赖protocol服务进行协议编解码|
 |Air-Back|Springboot，Mybatis，Http服务端|需配置MySQL数据库|
-|Air-Webapp|Jsp，Servlet，Jdbc||
-|Air-Phone|Kotlin ...|
+|Air-Webapp|Jsp，Servlet，Jdbc. jQuery. Bootstrap||
+|Air-Phone|Kotlin HTTP|
 
 #### 提示: 
 

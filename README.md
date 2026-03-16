@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/kevinten10/Air/blob/master/air-doc/images/Icon.png" width="150"/>
+  <img src="./docs/banner.png" alt="Air Banner" width="800"/>
 </p>
 
 <h1 align="center">Air - 大气质量监测系统</h1>
@@ -38,6 +38,10 @@
 
 ## 🏗️ 系统架构
 
+<p align="center">
+  <img src="./docs/architecture.png" alt="系统架构图" width="900"/>
+</p>
+
 ### 数据流程
 
 ```
@@ -70,6 +74,10 @@
 ---
 
 ## 🚀 子项目一览
+
+<p align="center">
+  <img src="./docs/modules.png" alt="系统模块" width="900"/>
+</p>
 
 ### 🔧 初始化子项目
 

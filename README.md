@@ -199,8 +199,8 @@ mvn tomcat7:run
 
 ### 数据展示
 
-- 访问 Web 站点：[http://www.lifecat.club/air/](http://www.lifecat.club/air/)
-- 或本地部署后访问 `http://localhost:8080/air-webapp`
+- 本地部署后访问 `http://localhost:8080/air-webapp`。
+- 历史演示地址 `http://www.lifecat.club/air/` 已离线（2026-07-12 实测返回 HTTP 502），不再作为可用生产网站。
 
 ---
 
@@ -255,9 +255,9 @@ mvn tomcat7:run
 
 ![数据展示](air-doc/images/数据展示.png)
 
-### 在线演示
+### 历史演示
 
-🌐 **演示网址**: [http://www.lifecat.club/air/](http://www.lifecat.club/air/)
+`http://www.lifecat.club/air/` 曾用于在线演示，目前已离线。请按上文启动各模块后在本地验证。
 
 ---
 
